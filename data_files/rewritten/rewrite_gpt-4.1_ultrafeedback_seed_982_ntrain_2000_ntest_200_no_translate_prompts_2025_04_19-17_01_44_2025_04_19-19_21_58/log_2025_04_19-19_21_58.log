@@ -1,0 +1,32 @@
+2025-04-19 19:21:58,146 - INFO - Starting to create preference dataset with rewritten responses based on arguments:
+{'rewrite_details_path': 'outputs/rewrite_calls/rewrite_gpt-4.1_seed_517_ntrain_200_ntest_200_2025_04_19-17_16_06/rewrite_call_details.pt', 'output_dir': 'data_files/rewritten', 'cache_dir': None, 'tokenizer': 'meta-llama/Llama-3.2-1B'}
+2025-04-19 19:21:59,559 - INFO - Fetched responses from OpenAI API, full name of the model used: gpt-4.1-2025-04-14
+2025-04-19 19:21:59,974 - INFO - ==============================================================================================================
+2025-04-19 19:21:59,975 - INFO - Token overlap statistics for train split
+2025-04-19 19:21:59,975 - INFO - --------------------------------------------------------------------------------------------------------------
+2025-04-19 19:22:00,185 - INFO - Mean token overlap of original responses with themselves: 0.05253095817402936
+2025-04-19 19:22:00,185 - INFO - Mean token overlap of new responses with original responses: 0.024353171619586646
+2025-04-19 19:22:00,185 - INFO - ==============================================================================================================
+2025-04-19 19:22:00,185 - INFO - ==============================================================================================================
+2025-04-19 19:22:00,185 - INFO - Token overlap statistics for test split
+2025-04-19 19:22:00,185 - INFO - --------------------------------------------------------------------------------------------------------------
+2025-04-19 19:22:00,387 - INFO - Mean token overlap of original responses with themselves: 0.048172622714191676
+2025-04-19 19:22:00,387 - INFO - Mean token overlap of new responses with original responses: 0.022987820514244958
+2025-04-19 19:22:00,387 - INFO - ==============================================================================================================
+2025-04-19 19:22:00,387 - INFO - Final dataset characteristics
+2025-04-19 19:22:00,387 - INFO - ==============================================================================================================
+2025-04-19 19:22:00,387 - INFO - Dataset Characteristics
+2025-04-19 19:22:00,387 - INFO - --------------------------------------------------------------------------------------------------------------
+2025-04-19 19:22:00,387 - INFO - Split: train
+2025-04-19 19:22:00,387 - INFO - Number of samples: 200
+2025-04-19 19:22:00,429 - INFO - Mean chosen response length: 189.685
+2025-04-19 19:22:00,466 - INFO - Mean rejected response length: 156.555
+2025-04-19 19:22:00,466 - INFO - --------------------------------------------------------------------------------------------------------------
+2025-04-19 19:22:00,466 - INFO - Split: test
+2025-04-19 19:22:00,466 - INFO - Number of samples: 200
+2025-04-19 19:22:00,510 - INFO - Mean chosen response length: 186.565
+2025-04-19 19:22:00,548 - INFO - Mean rejected response length: 156.29
+2025-04-19 19:22:00,548 - INFO - --------------------------------------------------------------------------------------------------------------
+2025-04-19 19:22:00,548 - INFO - ==============================================================================================================
+2025-04-19 19:22:00,553 - INFO - Dataset saved locally at: data_files/rewritten/rewrite_gpt-4.1_ultrafeedback_seed_982_ntrain_2000_ntest_200_no_translate_prompts_2025_04_19-17_01_44_2025_04_19-19_21_58
+2025-04-19 19:22:00,557 - INFO - Finished dataset with rewritten responses creation script. Time took: 0:00:02.413262

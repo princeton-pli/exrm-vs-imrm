@@ -1,0 +1,14 @@
+matplotlib
+numpy
+scikit-learn
+scipy
+wandb
+transformers==4.51.3
+tokenizers==0.21.0
+datasets==3.1.0
+accelerate==1.2.0
+trl==0.13.0
+deepspeed==0.15.4
+jsonlines
+cvxopt
+

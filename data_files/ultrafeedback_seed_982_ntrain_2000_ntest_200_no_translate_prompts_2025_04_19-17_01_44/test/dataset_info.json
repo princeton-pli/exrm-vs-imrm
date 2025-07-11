@@ -1,0 +1,96 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "ultrafeedback_binarized",
+  "dataset_size": 1161661325,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/HuggingFaceH4/ultrafeedback_binarized@3949bf5f8c17c394422ccfab0c31ea9c20bdeb85/data/train_prefs-00000-of-00001.parquet": {
+      "num_bytes": 225891836,
+      "checksum": null
+    },
+    "hf://datasets/HuggingFaceH4/ultrafeedback_binarized@3949bf5f8c17c394422ccfab0c31ea9c20bdeb85/data/train_sft-00000-of-00001.parquet": {
+      "num_bytes": 225891836,
+      "checksum": null
+    },
+    "hf://datasets/HuggingFaceH4/ultrafeedback_binarized@3949bf5f8c17c394422ccfab0c31ea9c20bdeb85/data/test_prefs-00000-of-00001.parquet": {
+      "num_bytes": 7291160,
+      "checksum": null
+    },
+    "hf://datasets/HuggingFaceH4/ultrafeedback_binarized@3949bf5f8c17c394422ccfab0c31ea9c20bdeb85/data/test_sft-00000-of-00001.parquet": {
+      "num_bytes": 3719085,
+      "checksum": null
+    },
+    "hf://datasets/HuggingFaceH4/ultrafeedback_binarized@3949bf5f8c17c394422ccfab0c31ea9c20bdeb85/data/train_gen-00000-of-00001.parquet": {
+      "num_bytes": 184150527,
+      "checksum": null
+    },
+    "hf://datasets/HuggingFaceH4/ultrafeedback_binarized@3949bf5f8c17c394422ccfab0c31ea9c20bdeb85/data/test_gen-00000-of-00001.parquet": {
+      "num_bytes": 3022752,
+      "checksum": null
+    }
+  },
+  "download_size": 649967196,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1811628521,
+  "splits": {
+    "train_prefs": {
+      "name": "train_prefs",
+      "num_bytes": 405703946,
+      "num_examples": 61135,
+      "dataset_name": "ultrafeedback_binarized"
+    },
+    "train_sft": {
+      "name": "train_sft",
+      "num_bytes": 405703946,
+      "num_examples": 61135,
+      "dataset_name": "ultrafeedback_binarized"
+    },
+    "test_prefs": {
+      "name": "test_prefs",
+      "num_bytes": 13162085,
+      "num_examples": 2000,
+      "dataset_name": "ultrafeedback_binarized"
+    },
+    "test_sft": {
+      "name": "test_sft",
+      "num_bytes": 6697583,
+      "num_examples": 1000,
+      "dataset_name": "ultrafeedback_binarized"
+    },
+    "train_gen": {
+      "name": "train_gen",
+      "num_bytes": 325055820,
+      "num_examples": 61135,
+      "dataset_name": "ultrafeedback_binarized"
+    },
+    "test_gen": {
+      "name": "test_gen",
+      "num_bytes": 5337945,
+      "num_examples": 1000,
+      "dataset_name": "ultrafeedback_binarized"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

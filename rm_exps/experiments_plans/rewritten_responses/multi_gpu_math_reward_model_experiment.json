@@ -1,0 +1,82 @@
+{
+  "name": "Reward model training experiments",
+  "description": "",
+  "skip": 0,
+  "repetitions": 1,
+  "largest": false,
+  "multiprocess": false,
+  "num_parallel": 1,
+  "gpu_ids_pool": [],
+  "configurations": [
+    {
+      "base_config": {
+        "experiment_name": "math_epochs_{epochs}_{objective}_{model}_ntrain_{num_train_samples}_ntest_{num_test_samples}_dataseed_{dataset_prep_random_seed}_kl_{kl_coeff}_{optimizer}_{lr}",
+        "model_parallel_without_accelerate": false,
+        "random_seed": -1,
+        "epochs": 5,
+        "validate_every": 1,
+        "outputs_dir": "outputs/math",
+        "disable_console_log": false,
+        "save_logs": true,
+        "train_batch_log_interval": 100,
+        "epoch_log_interval": 1,
+        "save_metric_plots": false,
+        "save_every_num_val": 1,
+        "use_tensorboard": false,
+        "use_wandb": false,
+        "wandb_resume_path": "",
+        "wandb_project_name": "rm_exps",
+        "wandb_entity_name": "",
+        "wandb_track_model": null,
+        "wandb_exclude_files": [
+          "plots/**"
+        ],
+        "score_metric_name": "eval train loss",
+        "is_train_metric": false,
+        "score_largest": false,
+        "return_best_score": false,
+        "dataset_path": "data_files/rewardmath_seed_982_ntrain_2000_ntest_200_2025_04_13-18_27_54",
+        "num_train_samples": 1000,
+        "num_test_samples": 200,
+        "dataset_prep_random_seed": 517,
+        "batch_size": 1,
+        "gradient_accumulation_steps": 8,
+        "evaluation_datasets_paths": [
+          "data_files/rewritten/rewrite_gpt-4.1_ultrafeedback_seed_982_ntrain_2000_ntest_200_no_translate_prompts_2025_04_19-17_01_44_2025_04_19-19_21_58",
+          "data_files/rewritten/translate_french_gpt-4.1_ultrafeedback_seed_982_ntrain_2000_ntest_200_no_translate_prompts_2025_04_19-17_01_44_2025_04_19-19_37_54",
+          "data_files/rewritten/translate_spanish_gpt-4.1_ultrafeedback_seed_982_ntrain_2000_ntest_200_no_translate_prompts_2025_04_19-17_01_44_2025_04_19-19_38_08",
+          "data_files/rewardbench_math_seed_982_ntrain_-1_ntest_200_2025_04_23-15_48_54",
+          "data_files/rewardbench_code_seed_982_ntrain_-1_ntest_200_2025_04_23-15_49_17",
+          "data_files/ultrafeedback_seed_982_ntrain_2000_ntest_200_no_translate_prompts_2025_04_19-17_01_44"
+        ],
+        "evaluation_datasets_names": [
+          "paraphrase",
+          "translate_french",
+          "translate_spanish",
+          "rewardbench_math",
+          "rewardbench_code",
+          "ultrafeedback"
+        ],
+        "evalution_datasets_splits": [
+          "test",
+          "test",
+          "test",
+          "test",
+          "test",
+          "test"
+        ],
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "model_cache_dir": "",
+        "use_bf16": false,
+        "kl_coeff": 0.01,
+        "objective": "ex_rm",
+        "use_all_response_hidden_embeddings": false,
+        "no_ref_model": false,
+        "optimizer": "adam",
+        "lr": 1e-6,
+        "save_model": false
+      },
+      "options": {}
+    }
+  ]
+}

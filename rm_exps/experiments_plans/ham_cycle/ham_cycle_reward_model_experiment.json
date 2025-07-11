@@ -1,0 +1,68 @@
+{
+  "name": "Reward model training on Hamiltonian cycle verification experiments",
+  "description": "",
+  "skip": 0,
+  "repetitions": 1,
+  "largest": false,
+  "multiprocess": false,
+  "num_parallel": 1,
+  "gpu_ids_pool": [],
+  "configurations": [
+    {
+      "base_config": {
+        "experiment_name": "N10_p0-2_epochs_{epochs}_{objective}_{model}_ntrain_{num_train_samples}_ntest_{num_test_samples}_dataseed_{dataset_prep_random_seed}_kl_{kl_coeff}_{optimizer}_{lr}",
+        "model_parallel_without_accelerate": false,
+        "random_seed": -1,
+        "epochs": 15,
+        "validate_every": 1,
+        "outputs_dir": "outputs/ham_cycle",
+        "disable_console_log": false,
+        "save_logs": true,
+        "train_batch_log_interval": 10,
+        "epoch_log_interval": 1,
+        "save_metric_plots": true,
+        "save_every_num_val": 1,
+        "use_tensorboard": false,
+        "use_wandb": false,
+        "wandb_resume_path": "",
+        "wandb_project_name": "rm_exps",
+        "wandb_entity_name": "",
+        "wandb_track_model": null,
+        "wandb_exclude_files": [
+          "plots/**"
+        ],
+        "score_metric_name": "eval train loss",
+        "is_train_metric": false,
+        "score_largest": false,
+        "return_best_score": false,
+        "dataset_path": "FILL_THIS_IN",
+        "num_train_samples": 1000,
+        "num_test_samples": 200,
+        "dataset_prep_random_seed": 517,
+        "batch_size": 16,
+        "gradient_accumulation_steps": 2,
+        "evaluation_datasets_paths": [],
+        "evaluation_datasets_names": [],
+        "evalution_datasets_splits": [],
+        "model": "EleutherAI/pythia-1b",
+        "model_cache_dir": "",
+        "use_bf16": false,
+        "kl_coeff": 0.01,
+        "objective": "ex_rm",
+        "use_all_response_hidden_embeddings": false,
+        "no_ref_model": false,
+        "optimizer": "adam",
+        "lr": 1e-6,
+        "save_model": false,
+        "is_ham_cycle_task": true,
+        "ham_cycle_gen_num_tries": 1
+      },
+      "options": {
+        "objective": [
+          "im_rm",
+          "ex_rm"
+        ]
+      }
+    }
+  ]
+}

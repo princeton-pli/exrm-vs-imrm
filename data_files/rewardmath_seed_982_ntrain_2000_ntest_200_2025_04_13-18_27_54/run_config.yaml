@@ -1,0 +1,9 @@
+cache_dir: null
+dataset: rewardmath
+max_prompt_length: 512
+max_response_length: 512
+num_test_samples: 200
+num_train_samples: 2000
+output_dir: data_files
+random_seed: 982
+tokenizer_for_length_filtering: meta-llama/Llama-3.2-1B

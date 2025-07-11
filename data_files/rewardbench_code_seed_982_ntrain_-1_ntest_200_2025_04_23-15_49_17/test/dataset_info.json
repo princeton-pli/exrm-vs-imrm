@@ -1,0 +1,56 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "reward-bench",
+  "dataset_size": 15687265,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/allenai/reward-bench@168d848cdbbea9764fae4a544dc9ca1e6cca4931/data/raw-00000-of-00001.parquet": {
+      "num_bytes": 5589200,
+      "checksum": null
+    },
+    "hf://datasets/allenai/reward-bench@168d848cdbbea9764fae4a544dc9ca1e6cca4931/data/filtered-00000-of-00001.parquet": {
+      "num_bytes": 2354751,
+      "checksum": null
+    }
+  },
+  "download_size": 7943951,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 23631216,
+  "splits": {
+    "raw": {
+      "name": "raw",
+      "num_bytes": 10837684,
+      "num_examples": 5123,
+      "dataset_name": "reward-bench"
+    },
+    "filtered": {
+      "name": "filtered",
+      "num_bytes": 4849581,
+      "num_examples": 2985,
+      "dataset_name": "reward-bench"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "orig_index": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "orig_chosen": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "orig_rejected": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

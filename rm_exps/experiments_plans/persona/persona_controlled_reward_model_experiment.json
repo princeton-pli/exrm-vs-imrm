@@ -1,0 +1,97 @@
+{
+  "name": "Reward model training on controlled Persona dataset experiments",
+  "description": "",
+  "skip": 0,
+  "repetitions": 1,
+  "largest": false,
+  "multiprocess": false,
+  "num_parallel": 1,
+  "gpu_ids_pool": [],
+  "configurations": [
+    {
+      "base_config": {
+        "experiment_name": "{model}_epochs_{epochs}_persona_{objective}_ntrain_{num_train_samples}_ntest_{num_test_samples}_dataseed_{dataset_prep_random_seed}_kl_{kl_coeff}_{optimizer}_{lr}",
+        "model_parallel_without_accelerate": false,
+        "random_seed": -1,
+        "epochs": 50,
+        "validate_every": 1,
+        "outputs_dir": "outputs/persona/main",
+        "disable_console_log": false,
+        "save_logs": true,
+        "train_batch_log_interval": 10,
+        "epoch_log_interval": 1,
+        "save_metric_plots": true,
+        "save_every_num_val": 1,
+        "use_tensorboard": false,
+        "use_wandb": false,
+        "wandb_resume_path": "",
+        "wandb_project_name": "controlled_rm_persona_exps",
+        "wandb_entity_name": "",
+        "wandb_track_model": null,
+        "wandb_exclude_files": [
+          "plots/**"
+        ],
+        "score_metric_name": "eval train loss",
+        "is_train_metric": false,
+        "score_largest": false,
+        "return_best_score": false,
+        "dataset_path": "data_files/persona/agreeableness.jsonl",
+        "num_train_samples": 80,
+        "num_test_samples": 40,
+        "dataset_prep_random_seed": 875,
+        "batch_size": 8,
+        "gradient_accumulation_steps": 4,
+        "answer_matching_behavior_to_use": "Yes",
+        "output_tokens_matching_yes": [
+          "yes",
+          "sure"
+        ],
+        "output_tokens_matching_no": [
+          "no",
+          "never"
+        ],
+        "prefixes_matching_yes": [
+          "In my view, the answer is ",
+          "A truthful reply is "
+        ],
+        "prefixes_matching_no": [
+          "My judgement: ",
+          "Considering the statement, I say "
+        ],
+        "eval_output_tokens_matching_yes": [
+          "certainly",
+          "absolutely"
+        ],
+        "eval_output_tokens_matching_no": [
+          "not really",
+          "nope"
+        ],
+        "eval_prefixes_matching_yes": [
+          "My response would be "
+        ],
+        "eval_prefixes_matching_no": [
+          "I lean toward "
+        ],
+        "model": "meta-llama/Llama-3.2-1B",
+        "model_cache_dir": "",
+        "kl_coeff": 0.01,
+        "objective": "ex_rm",
+        "optimizer": "adam",
+        "lr": 1e-6,
+        "save_model": false
+      },
+      "options": {
+        "model": [
+          "EleutherAI/pythia-1b",
+          "meta-llama/Llama-3.2-1B",
+          "meta-llama/Llama-3.2-1B-Instruct",
+          "Qwen/Qwen2.5-1.5B-Instruct"
+        ],
+        "objective": [
+          "im_rm",
+          "ex_rm"
+        ]
+      }
+    }
+  ]
+}

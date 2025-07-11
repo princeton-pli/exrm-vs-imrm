@@ -1,0 +1,46 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "reward_math_pairwise",
+  "dataset_size": 7277649,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/RewardMATH/RewardMATH_pairwise@ec2261b4103dd5083b115eb40bed41023790108a/data/test-00000-of-00001.parquet": {
+      "num_bytes": 1896806,
+      "checksum": null
+    }
+  },
+  "download_size": 1896806,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "chosen": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rejected": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 9174455,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 7277649,
+      "num_examples": 4347,
+      "dataset_name": "reward_math_pairwise"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
